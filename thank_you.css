@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    min-height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack header, main, and footer */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(75deg, #d10d3e, #bfba1a);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* Ensure header takes full width */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff7e5f;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    width: 100%; /* Ensure footer takes full width */
+}
+
+footer p {
+    margin: 3% 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff7e5f;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Centers content horizontally with some margin */
+    text-align: center;
+    width: 100%; /* Ensure it takes up full width of container */
+}
+
+/* Receipt Container */
+.receipt-container {
+    background: #b9b9b9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.receipt-container .restaurant-info p,
+.receipt-container .order-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.receipt-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.receipt-container table thead {
+    background: #f8552d;
+    color: white;
+}
+
+.receipt-container table th,
+.receipt-container table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.receipt-container table th {
+    font-size: 1em;
+}
+
+.receipt-container table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.receipt-container table tbody tr:nth-child(even) {
+    background: #e2e2e2;
+}
+
+.receipt-container table tfoot {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.receipt-container button {
+    background: #f8552d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.receipt-container button:hover {
+    background: #bfba1a;
+}
+
+footer {
+    margin-top: 40px;
+}

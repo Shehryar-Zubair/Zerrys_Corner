@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', 'Sans-serif';
+    margin: 0;
+    padding: 0;
+    background: url('pictures/HAMBURG.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+
+/* Smooth scaling on hover */
+body:hover {
+    transform: scale(1.01);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1); /* Subtle glass effect */
+    backdrop-filter: blur(10px);
+}
+
+/* Header */
+header {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(75deg, #d10d3e, #bfba1a);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+/* Signup Section */
+.signup-section {
+    background: rgba(23, 23, 23, 0.9);
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.signup-section:hover {
+    transform: scale(1.02);
+}
+
+/* Gradient Text */
+.signup-section h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    background: linear-gradient(75deg, #d10d3e, #bfba1a);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.signup-section input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-section input:focus {
+    border-color: #d10d3e;
+    box-shadow: 0 0 8px rgba(209, 13, 62, 0.5);
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.signup-section button {
+    background: #d10d3e;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-section button:hover {
+    background: #bfba1a;
+    border-radius: 25px;
+    transform: scale(1.05);
+}
+
+/* Links */
+.signup-section a {
+    color: #d10d3e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-section a:hover {
+    text-decoration: underline;
+    color: #bfba1a;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #bfba1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .form-container, .signup-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .signup-section h2 {
+        font-size: 1.8em;
+    }
+
+    .signup-section button {
+        padding: 10px;
+    }
+}

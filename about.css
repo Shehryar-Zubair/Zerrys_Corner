@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  animation: fadeIn 0.8s ease-in-out;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Prevent Overflow */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Load Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  background: linear-gradient(75deg, #d10d3e, #bfba1a);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Responsive Navigation */
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: 0.3s;
+  background-color: #333;
+  width: 100%;
+  max-width: 100%;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Navigation Hover Effect */
+header nav ul li a.active,
+header nav ul li a:hover {
+  background-color: white;
+  color: #ff6347;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+/* Mobile Navigation */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    background: #333;
+    top: 60px;
+    left: 0;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  header nav ul li {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  max-width: 100%;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #000000;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/* Sections */
+.our-story,
+.our-team,
+.values,
+.contact-us {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+h2 {
+  color: #070707;
+  border-bottom: 2px solid #ff6347;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Team Members */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Team Section */
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-member img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Footer Back to Home Button */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #090908;
+  color: white;
+  width: 100%;
+}
+
+footer .back-home-btn {
+  margin-top: 10px;
+  padding: 10px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000000;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(189, 87, 9, 0.3);
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+footer .back-home-btn:hover {
+  background-color: #ff9d00;
+  color: white;
+  border-color: white;
+  transform: scale(1.1);
+}
+
+footer .back-home-btn:active {
+  background-color: #3a3939;
+  transform: scale(0.95);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+
+  footer .back-home-btn {
+    font-size: 0.9em;
+    padding: 8px 20px;
+  }
+}

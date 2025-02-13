@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+/* Prevent Content Overflow */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(75deg, #d10d3e, #bfba1a);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Interactive Effect */
+header h1:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #ff7e5f;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 3% 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff7e5f;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Checkout Container */
+.receipt-container {
+    background: #e5e5e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.receipt-container h2,
+.receipt-container h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #000000;
+}
+
+.receipt-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.receipt-container li {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.receipt-container li:hover {
+    transform: scale(1.02);
+}
+
+.receipt-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+}
+
+.receipt-container a {
+    display: inline-block;
+    background: #f8552d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.receipt-container a:hover {
+    background: #bfba1a;
+    transform: scale(1.05);
+}
+
+/* Checkout Page */
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.checkout-container h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.checkout-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkout-container li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-container p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* View Receipt Link */
+.view-receipt-link {
+    display: inline-block;
+    background: #f8552d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.view-receipt-link:hover {
+    background: #bfba1a;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .receipt-container,
+    .checkout-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .receipt-container h2,
+    .checkout-container h2 {
+        font-size: 1.5em;
+    }
+
+    .view-receipt-link,
+    .receipt-container a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}

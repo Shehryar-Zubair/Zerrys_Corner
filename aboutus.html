@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Zerry's Corner</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <header style="text-align: center; padding: 0px; background-color: #f8f8f8;">
+        <!-- Logo -->
+        <img src="pictures/zerrylogo.png" alt="Zerry's Corner Logo"
+            style="width: 300px; height: auto; margin: 0 auto ;position: display block;">
+        <!-- Title and Tagline 
+        <h1>Welcome to Zerry's Corner</h1>
+        <p>Where Every Bite Tells a Story</p>-->
+        </div>
+        <nav>
+        <ul>
+          <li><a href="homepage1.php">Home</a></li>
+          <li><a href="menu.php">Menu</a></li>
+          <li><a href="view_cart.php">Cart</a></li>
+          <li><a href="aboutus.php" class="active">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to Zerry's Corner</h2>
+        <p>
+          Your go-to spot for delicious, freshly prepared meals made with love!
+        </p>
+      </section>
+
+      <section class="our-story">
+        <h2>Our Story</h2>
+        <p>
+          Zerry's Corner was founded with a simple mission: to create an
+          unforgettable dining experience for every customer. From humble
+          beginnings, our passion for great food and exceptional service has
+          turned us into a beloved spot in the community.
+        </p>
+        <p>
+          We take pride in using the freshest ingredients, creating innovative
+          dishes, and serving with a smile. Whether you're here for a quick
+          bite, a cozy meal with family, or a celebration, Zerry's Corner is
+          where memories are made.
+        </p>
+      </section>
+
+      <section class="our-team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+          <img src="pictures/kk.png" alt="Head Chef" />
+          <h3>Chef Khalid Kashmiri</h3>
+          <p>
+             <li>The mastermind behind our mouth-watering recipes, Chef Khalid brings
+            years of culinary expertise to every dish.</li>
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="pictures/gord.png" alt="Restaurant Manager" />
+          <h3>Gordan Ramsey</h3>
+          <p>
+            <li>Our manager, Gordan, ensures that every customer leaves with a
+            smile. He's the heart of Zerry's Corner.</li>
+          </p>
+        </div>
+      </section>
+
+      <section class="values">
+        <h2>Our Values</h2>
+        <ul>
+          <li>
+            <strong>Quality:</strong> Only the best ingredients make it to your
+            plate.
+          </li>
+          <li>
+            <strong>Service:</strong> Customer satisfaction is at the core of
+            everything we do.
+          </li>
+          <li>
+            <strong>Community:</strong> We love giving back to the community
+            that supports us.
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We'd love to hear from you!</p>
+        <p>
+          Email:
+          <a href="mailto:contact@zerryscorner.com">contact@zerryscorner.com</a>
+        </p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Flavor Street, Foodie City, FC 45678</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Zerry's Corner. All rights reserved.</p>
+      <p>
+        Developed by 
+        <a href="https://github.com/CodeWeaveCo" target="_blank" style="color: #ff9d00; font-weight: bold; text-decoration: none;" class="github-link">
+          CodeWeaveCo
+        </a>
+      </p>
+      <button
+        onclick="window.location.href='homepage.php'"
+        class="back-home-btn"
+      >
+        Back to Home
+      </button>
+    </footer>
+  </body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector("header nav ul");
+
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});
+</script>

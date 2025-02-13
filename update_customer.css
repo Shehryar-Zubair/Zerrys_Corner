@@ -1,0 +1,199 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(75deg, #e73b3b, #bfba1a);
+    margin: 10;
+    padding: 50em;
+}
+header {
+    background: linear-gradient(75deg,#e73b3b,#bfba1a);
+    color: rgb(210, 110, 110);
+    padding: 20px;
+    text-align: center;
+}
+/* Header styles */
+form h3 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    background: linear-gradient(75deg, #e73b3b, #bfba1a);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 0 20px;
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 10000px;
+    margin: Fill ;
+    padding: 30px 20px;
+    background: linear-gradient(75deg, #e73b3b, #bfba1a);
+    border-radius: 0px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    background: #161616;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Form label styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff9f9;
+    font-weight: bold;
+}
+
+/* Input fields and textarea styling */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Textarea height adjustment */
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Button styling */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #fafa04;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: #020202;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styles */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Modal buttons container */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Modal button styling */
+.modal-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.ok-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ok-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    form {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 0.9em;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
