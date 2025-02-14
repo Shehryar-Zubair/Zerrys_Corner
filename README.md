@@ -33,6 +33,6 @@ The system consists of **five key tables**:
 
 ## 👨‍💻 **Developed By**  
 - **Shehryar Zubair Khan**  (me)
-- **Zehra Jabeen Mirza** ([GitHub](https://github.com/zehra-jm))  
+- **([Zehra Jabeen Mirza](https://github.com/zehra-jm))** 
 
 
